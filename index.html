@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="banner-image"></div>
+  <nav>
+    <ul>
+        <li class="dropdownIcon">
+          <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="projects">projects</a></li>
+          <li><a href="contact">Contact</a></li>
+          <li><a href="#about">Blog</a></li>
+          <li><a href="#about">Resume</a></li>
+          <li><a href="#contact">Portfolio Gallery</a></li>
+    </ul>
+    </nav>
+
+  <h1>Welcome To Our Page</h1>
+  <div class="container">
+    <div class="row">
+
+      <!---Flexboxes divs-->
+      <div class="r1"><h2>About Me</h2><br>My name is Group 6 I am a trainee in the ongoing CWW Tech Africa cohort5. I am a web developer. please feel free to walk through my portfolio, definitely open to work with you, do you? right below is a form you could possibly fill.
+
+        </div>
+      <div class="r1b"></div>
+      <div class="r1"><h2>Why we are the Best</h2><br>5 years experience<br>
+        Up-to-date on the latest trends<br>
+        Able to design responsive websites<br>
+        Good communication.<br>Low Cost with quality Websites</div>
+    </div>
+    <div class="row">
+      <div class="r2"></div>
+      <div class="r2b"><h2>"Educational Quiz project"</h2><br>This project aimed at understanding gender perspective and ideas in the classroom, by grouping pupils based on their gender and allowing them give their opinion on certain topics. This project is aimed at assisting online buyers to make fast and easy purchase at the comfort of their homes.
+        Buyers and sellers are able to exchange goods and services transmit funds and data over the internet. Technically buying and selling relying on technology and digital platforms,
+        including websites, mobile apps and social media to make buying and selling possible.
+      </div>
+    </div>
+    <div class="row">
+      <div class="r3"><section id="contact">
+                
+        <!-- Contact form goes here -->
+    <nav class="contact-form">
+        <form action="submit_form.php" method="post">
+            <label for="name"><strong>Name:</strong></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message"><strong>Comment:</strong></label>
+            <textarea id="message" name="Comment" required  width="100px" height="100px"></textarea>
+            <button type="submit">Submit</button>
+     </form>
+   </nav>
+</section></div>
+      <div class="r4"></div>
+    </div>
+  </div>
+
+  <script>
+    function dropdownMenu() {
+      let x = document.getElementById("dropdownClick");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        /* ############# change topnav to topnav.responsive ############## */
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+
+<footer>
+  <footer class="div-footer">@2023 Group Six<br>CWW Tech Africa</footer>
+</footer>
+
+</body>
+</html>
